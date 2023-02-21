@@ -1,0 +1,158 @@
+.container__work{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 0 8px 16px 8px; /* add bottom margin to create space between rows */
+}
+
+@media only screen and (max-width: 768px) {
+  /* adjust the card width for smaller screens */
+  .carousel {
+    gap: 0.5rem;
+  }
+  
+  .flip-card {
+    width: calc(25% - 16px); /* set width to 25% minus margin */
+  }
+}
+  
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid var;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, rgb(167, 165, 165) 60%, rgb(255, 231, 222) 88% rgb(255, 211, 195) 40%, rgba(227, 174, 154, 0.603) 48%);
+    color: var(--color-golden);
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, #f6f6f5 30%, white 88%,   40%, var(--color-crimson) 78%);
+    color: grey;
+    transform: rotateY(180deg);
+  }
+
+ 
+  .comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+  }
+
+  .container__links
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .container__eye h1
+  {
+    font-size: small;
+    padding-bottom: 1rem;
+  }
+
+  .container__git h1
+  {
+    font-size: small;
+    padding-bottom: 1rem;
+  }
+
+
+  .img{
+    object-fit: contain;
+    padding-top: 1rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding-left : 1rem;
+    padding-right : 1rem;
+  }
