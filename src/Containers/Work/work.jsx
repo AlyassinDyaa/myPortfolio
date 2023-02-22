@@ -1,390 +1,156 @@
-import React from 'react'
-import "./work.css"
-import {motion} from "framer-motion"
+import React from 'react';
+import "./work.css";
+import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-
 
 import IMG1 from "../../Assets/portfolio1.png";
 import IMG2 from "../../Assets/portfolio2.png";
 import IMG3 from "../../Assets/rest.png";
 import IMG4 from "../../Assets/meta.png";
 import IMG5 from "../../Assets/netclone.png";
-import IMG6 from "../../Assets/about01.png";
+import IMG6 from "../../Assets/fitness1.png";
 import IMG7 from "../../Assets/unovaFit.png";
+import IMG8 from "../../Assets/portfolio3.png";
 
-const work = () => {
+const cardsData = [
+  {
+    title: "Portfolio 1",
+    imageSrc: IMG1,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "Portfolio 2",
+    imageSrc: IMG2,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "Portfolio 3",
+    imageSrc: IMG8,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "Restaurant",
+    imageSrc: IMG3,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "MetaWorld",
+    imageSrc: IMG4,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "NetClone",
+    imageSrc: IMG5,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "UNOVA Fit",
+    imageSrc: IMG7,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  {
+    title: "Fitness",
+    imageSrc: IMG6,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+  // add more objects as needed
+];
+
+function Card({ title, imageSrc, links }) {
   return (
-    <div id='work' className='container__work' >
-  
-       
+    <div className='card-container'>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <p className="title" style={{fontSize: "large"}}>{title}</p>
+            <p>Hover Me</p>
+            <img src={imageSrc} alt="card" className="img" />
+          </div>
+          <div className="flip-card-back">
+            <p className="title">Links</p>
+            <p>Leave Me</p>
+            <div className="comp">
+              <div className="container__links">
+                <div className="container__eye">
+                  <h1>DEMO</h1>
+                  <a href={links.demo} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                    >
+                      <AiFillEye />
+                    </motion.div>
+                  </a>
+                </div>
 
-          <div id="carousel" class="carousel">
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title">Portfolio 1</p>
-                    <p>Hover Me</p>
-                    <img src={IMG1} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={"https://alyassinprotfolio1.netlify.app"} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={"https://github.com/AlyassinDyaa/portfolio1"} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
+                <div className="container__git">
+                  <h1>GITHUB</h1>
+                  <a href={links.github} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
                 </div>
               </div>
-
-{/********************* 2 *********************/}
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title">Portfolio 2</p>
-                    <p>Hover Me</p>
-                    <img src={IMG2} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={"https://alyassinportfolio2.netlify.app"} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={"https://github.com/AlyassinDyaa/portfolio2"} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
-
-{/******************** 3 **********************/}
-<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title"> Restaurant </p>
-                    <p>Hover Me</p>
-                    <img src={IMG3} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={"https://alyassinrest.netlify.app"} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={"https://github.com/AlyassinDyaa/restauarntGh"} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
-
-
-{/********************* 4 *********************/}
-<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title"> METAWORLD</p>
-                    <p>Hover Me</p>
-                    <img src={IMG4} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={""} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={"https://github.com/AlyassinDyaa/metaWorld"} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
-
-{/********************* 5 *********************/}
-<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title"> NETClone</p>
-                    <p>Hover Me</p>
-                    <img src={IMG5} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={"https://alyassinnetflix.netlify.app"} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={""} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
-{/********************* 6 *********************/}
-<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title"> Fitness</p>
-                    <p>Hover Me</p>
-                    <img src={IMG6} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={""} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={""} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
-
-{/********************* 7 *********************/}
-<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p class="title"> UNOVA Fit</p>
-                    <p>Hover Me</p>
-                    <img src={IMG7} 
-                    alt='img1'
-                    placeholder='w1' 
-                    className='img'/>
-                  </div>
-
-
-                  <div class="flip-card-back">
-                    <p class="title">Links</p>
-                    <p>Leave Me</p>
-
-                    <div className="comp" >
-                          <div className="container__links">
-
-                            <div className='container__eye'>
-                                <h1> DEMO</h1>
-                                <a href={"https://play.google.com/store/apps/details?id=com.unova_fit"} target="_blank" rel="noreferrer">
-                                <motion.div
-                                  whileInView={{ scale: [0, 1] }}
-                                  whileHover={{ scale: [1, 0.90] }}
-                                  transition={{ duration: 0.25 }}>
-                                  <AiFillEye />
-                                </motion.div>
-                              </a>
-                            </div>
-                            
-                            <div className='container__git'>
-                                <h1> GITHUB</h1>
-                                <a href={"https://play.google.com/store/apps/details?id=com.unova_fit"} target="_blank" rel="noreferrer">
-                                  <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.90] }}
-                                    transition={{ duration: 0.25 }}>
-                                    <AiFillGithub />
-                                  </motion.div>
-                              </a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-{/******************************************/}
-
-
+            </div>
+          </div>
+        </div>
       </div>
-            
-
-      
     </div>
-  )
+  );
 }
 
-export default work
+function Work() {
+  return (
+    <>
+    <div className='container__work'>
+      <h1 className='container__work-title'> WORK </h1>
+      <h2 className='container__work-sub'> See Demos belows</h2>
+    </div>
+
+
+      <div className="work">
+        {cardsData.map((card) => (
+          <Card
+            key={card.title}
+            title={card.title}
+            imageSrc={card.imageSrc}
+            links={card.links}
+          />
+        ))}
+      </div>
+
+    </>
+  );
+}
+
+export default Work;
