@@ -3,14 +3,17 @@ import "./sections.css"
 
 const sections = () => {
   return (
-    <div>
+    <div className='container__section'>
+         <h1 >Lets Explore</h1>
+
+
         <main class="page-content">
 
           <div class="card">
             <div class="content">
               <h2 class="title">WORK</h2>
-              <p class="copy">Take a glimpse into my professional journey and accomplishments in the work section of my portfolio website, featuring a showcase of my best projects and experiences</p>
-              <button class="btn">View Trips</button>
+              <p class="copy">Here are some of my recent projects and experiences in the technology industry.</p>
+              <button class="btn">Lets Go</button>
             </div>
           </div>
 
@@ -18,8 +21,8 @@ const sections = () => {
           <div class="card">
             <div class="content">
               <h2 class="title">EDUCATION</h2>
-              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-              <button class="btn">View Trips</button>
+              <p class="copy">Discover my academic background and qualifications.</p>
+              <button class="btn">Lets Go</button>
             </div>
           </div>
 
@@ -27,8 +30,8 @@ const sections = () => {
           <div class="card">
             <div class="content">
               <h2 class="title">SKILLS</h2>
-              <p class="copy">It's the desert you've always dreamed of</p>
-              <button class="btn">Book Now</button>
+              <p class="copy">Unveil my skillset in the skills section of my portfolio website.</p>
+              <button class="btn">Lets Go</button>
             </div>
           </div>
 
@@ -36,12 +39,12 @@ const sections = () => {
           <div class="card">
             <div class="content">
               <h2 class="title">HOBBIES</h2>
-              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-              <button class="btn">Book Now</button>
+              <p class="copy">Peek into my interests and hobbies in the hobbies section of my portfolio website..</p>
+              <button class="btn">Lets Go</button>
             </div>
           </div>
 
-
+    
       </main>
     </div>
   )

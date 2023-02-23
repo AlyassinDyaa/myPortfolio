@@ -4,10 +4,8 @@
   justify-content: flex-start;
   padding-top: 7rem;
   overflow: hidden;
-  min-height: 120vh;
-  background-image: url('../../../Assets//blob.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 90vh;
+
 }
 
 .home_build {
@@ -41,21 +39,20 @@
   text-align: center;
 }
 
-.CTA {
+.btn-head {
   display: inline-block;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-  background-color: #007bff;
+  background-color: #24a0ed;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.CTA:hover {
-  background-color: cyan;
+.btn-head:hover {
+  background-color: var(--color-golden);
 }
 
 .imgD {
@@ -67,6 +64,8 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 12rem 12rem 12rem 12rem;
+  padding-left: 3.5rem;
+  margin-left: 10rem;
 }
 
 .imgDyaa {
@@ -94,7 +93,7 @@
   }
 
   .imgD {
-    
+  display: none;
   }
 }
 
@@ -111,7 +110,7 @@
   }
 
   .imgD {
-    width: 20rem;
+    width: 40rem;
     height: 20rem;
     left: -10rem;
     top: 30%;

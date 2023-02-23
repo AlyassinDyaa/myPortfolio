@@ -5,7 +5,7 @@
     align-items: center;
     padding: 1rem 2rem;
     background: var(--color-crimson);
-    
+    backdrop-filter: blur(5rem);
 }
 
 .app__navbar-logo {
