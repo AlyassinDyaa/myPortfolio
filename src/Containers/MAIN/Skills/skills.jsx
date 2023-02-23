@@ -3,9 +3,10 @@ import "./skills.css"
 
 const skills = () => {
   return (
-    <div>
+    <div className='skills'>
       Skills
-    </div>
+    
+  </div>
   )
 }
 

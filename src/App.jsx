@@ -1,10 +1,11 @@
 import React from 'react'
-import HOME from "./Containers/Home/home"
-import ABOUT from "./Containers/About/about"
-import WORK from "./Containers/Work/work"
-import SKILLS from "./Containers/Skills/skills"
-import CONTACT from "./Containers/Contact/contact"
-import FOOTER from "./Containers/Footer/footer"
+import HOME from "./Containers/MAIN/Home/home"
+import ABOUT from "./Containers/MAIN/About/about"
+import WORK from "./Containers/Experience/Work/work"
+import SKILLS from "./Containers/MAIN/Skills/skills"
+import CONTACT from "./Containers/FOOT/Contact/contact"
+import FOOTER from "./Containers/FOOT/Footer/footer"
+import SECTION from "./Containers/MAIN/Sections/sections"
 
 import NAV from "./Components/FloatNav/Nav"
 import NAVMENU from "./Components/NavMENU/Navbar"
@@ -16,8 +17,9 @@ const App = () => {
       <NAV/>
       <HOME/>
       <ABOUT/>
-      <WORK/>
-      <SKILLS/>
+      
+      <SECTION/>
+
       <CONTACT/>
       <FOOTER/>
     </div>

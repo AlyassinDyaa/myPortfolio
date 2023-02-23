@@ -5,20 +5,27 @@
     min-height: 60vh;
   }
   
-  .title {
-    font-size: 34px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+
   
-  .card__title {
+  .title-card__title {
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-card__subtitle
+   {
+    padding-top: 10px;
     font-size: 23px;
     font-weight: 900;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .card {
@@ -27,8 +34,8 @@
     padding: 0 15px;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
     background: var(--color-crimson);

@@ -1,0 +1,13 @@
+<div className='home_build'>
+
+        <div className='heading'>
+            <h1>D'Yaa Alyassin</h1>
+            <h2>  Welcome to my Portfolio</h2>
+            <CTA/>
+        </div>
+
+        <div className='imgD'>
+          <img src= {ME} className='imgDyaa' placeholder='dyaa' alt='img'/>
+        </div>
+
+      </div>
