@@ -12,6 +12,7 @@ const home = () => {
             <h1>D'Yaa Alyassin</h1>
             <h2>  Welcome to my Portfolio</h2>
             <CTA/>
+          
         </div>
 
         <div className='imgD'>
