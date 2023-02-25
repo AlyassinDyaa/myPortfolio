@@ -5,7 +5,7 @@ import WORK from "./Work/work"
 
 const exp = () => {
   return (
-    <div>
+    <div id='work'>
      <NAVMenu/>
      <WORK/>
     </div>

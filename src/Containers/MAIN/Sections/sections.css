@@ -63,6 +63,7 @@ body {
 }
 
 .card {
+  border-radius: 9%;
   position: relative;
   display: flex;
   align-items: flex-end;

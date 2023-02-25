@@ -4,7 +4,7 @@ import C from "./Contact/contact"
 
 const foot = () => {
   return (
-    <div>
+    <div id='contact'>
       <C/>
       <F/>
     </div>

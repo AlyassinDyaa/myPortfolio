@@ -5,7 +5,7 @@ import NAVMenu from "../../Components/NavMENU/Navbar"
 import WORK from "../Experience/exp"
 const hobbies = () => {
   return (
-    <div>
+    <div id='hobbies'>
       <NAVMenu/>
       <HEADER/>
       

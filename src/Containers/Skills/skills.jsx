@@ -4,7 +4,7 @@ import NAVMenu from "../../Components/NavMENU/Navbar"
 
 const skills = () => {
   return (
-    <div className='skills'>
+    <div id='skills' >
       Skills
   </div>
   )
