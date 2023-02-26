@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    object-fit: contain;
     background: var(--color-crimson);
     backdrop-filter: blur(5rem);
 }

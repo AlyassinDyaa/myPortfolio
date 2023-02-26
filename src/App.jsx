@@ -12,7 +12,8 @@ import SKILLS from "./Containers/Skills/skills"
 import HOBBIES from "./Containers/HOBBIES/hobbies"
 import MAIN from "./Containers/MAIN/main"
 
-
+import COMICS from "./Containers/HOBBIES/Comics/comics"
+import FOOT from "./Containers/FOOT/foot"
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
           <Route path="/hobbies" element={<HOBBIES />} />
         </Routes>
       </Router>
+      
+      
       
         
     </div>

@@ -4,10 +4,12 @@ import C from "./Contact/contact"
 
 const foot = () => {
   return (
-    <div id='contact'>
-      <C/>
-      <F/>
-    </div>
+      <>
+      <div className='container__contact'>
+        <C/>
+        <F/>
+      </div>
+      </>
   )
 }
 

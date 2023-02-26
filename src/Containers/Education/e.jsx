@@ -1,9 +1,14 @@
 import React from 'react'
-
+import EDU from "./edu/edu"
+import NAV from "../../Components/NavMENU/Navbar"
+import FOOT from "../FOOT/foot"
 const e = () => {
   return (
     <div id='education'>
-      EDUCTION
+      <NAV/>
+     
+      <EDU/>
+      <FOOT/>
     </div>
   )
 }

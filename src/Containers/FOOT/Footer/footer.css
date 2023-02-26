@@ -1,8 +1,8 @@
 .footer-basic {
   padding:40px 0;
-  background-color:var(--color-crimson);
   color:#4b4c4d;
   padding-bottom: 8rem;
+  
 }
 
 .footer-basic ul {
@@ -72,4 +72,79 @@
 .list-inline-item:hover
 {
   color: var(--color-golden);
+
 }
+
+
+/**************************************************/
+.social-media-icon-LINK{
+  font-size: 2.4rem;
+  color: #333;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.social-media-icon-LINK:hover {
+  color:#0e76a8;
+  font-size: 3.2rem;
+}
+/**************************************************/
+
+
+/**************************************************/
+.social-media-icon-INSTA{
+  font-size: 2.4rem;
+  color: #333;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.social-media-icon-INSTA:hover {
+  color: pink;
+   font-size: 3.2rem;
+}
+/**************************************************/
+
+
+
+/**************************************************/
+.social-media-icon-FACE{
+  font-size: 2.4rem;
+  color: #333;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.social-media-icon-FACE:hover {
+  color: #3b5998 ;
+  font-size: 3.2rem;
+}
+/**************************************************/
+
+
+
+/**************************************************/
+.social-media-icon-GIT{
+  font-size: 2.4rem;
+  color: #333;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.social-media-icon-GIT:hover {
+  color: #171515;
+  font-size: 3.2rem;
+}
+/**************************************************/
