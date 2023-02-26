@@ -33,7 +33,7 @@ const cardsData = [
     title: "Portfolio 3",
     imageSrc: IMG8,
     links: {
-      demo: "https://dyaaalyassin.netlify.app",
+      demo: "https://dyaaportfolio1.netlify.app/",
       github: ""
     }
   },
