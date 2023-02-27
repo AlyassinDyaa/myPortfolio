@@ -97,7 +97,7 @@ function Card({ title, imageSrc, links }) {
 
 
           <div className="flip-card-back">
-            <p className="title">Click Me</p>
+            <p className="title">Links</p>
             
             <div className="comp">
               <div className="container__links">

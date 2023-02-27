@@ -1,11 +1,10 @@
 .container__work-title
 {
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem
 }
 
 .container__work-sub
@@ -35,6 +34,12 @@
 
 .flip-card {
   background-color: transparent;
+  border: solid 0.5em transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, #e9c4ff, var(--color-crimson));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   width: 300px;
   height: 254px;
   perspective: 1000px;
@@ -77,9 +82,10 @@
   }
   
   .flip-card-front {
-    background: linear-gradient(120deg, var(--color-crimson) 60%, rgb(255, 231, 222) 88% rgb(255, 211, 195) 40%, rgba(227, 174, 154, 0.603) 48%);
-    color: var(--color-golden);
-  }
+  background: linear-gradient(120deg, #e8e8e8 0%, #fff 90%,
+     rgb(255, 211, 195) 40%, var(--color-crimson) 48%);
+  color: 	#800080;
+}
   
   .flip-card-back {
     background: linear-gradient(120deg, #f6f6f5 30%, white 88%,   40%, var(--color-crimson) 78%);
@@ -125,7 +131,7 @@
 
 
   .img {
-    object-fit:cover;
+    object-fit:contain;
     padding-top: 1rem;
     display: flex;
     justify-content: center;
@@ -133,7 +139,8 @@
     border-radius: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    
   }
   
 
