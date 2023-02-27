@@ -83,13 +83,19 @@ const cardsData = [
 function Card({ title, imageSrc, links }) {
   return (
     <div className='card-container'>
+
       <div className="flip-card">
+
         <div className="flip-card-inner">
+
+
           <div className="flip-card-front">
+          <img src={imageSrc} alt="card" className="img" />
             <p className="title" style={{fontSize: "large"}}>{title}</p>
-            <p>Hover Me</p>
-            <img src={imageSrc} alt="card" className="img" />
+            
           </div>
+
+
           <div className="flip-card-back">
             <p className="title">Links</p>
             <p>Click Me</p>

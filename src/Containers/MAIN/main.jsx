@@ -11,7 +11,7 @@ import "./main.css"
 
 const main = () => {
   return (
-    <div className='container__main'>
+    <div className='container__main' id='main'>
         <NAVMENU/>
         <NAV/>
         <HOME/>

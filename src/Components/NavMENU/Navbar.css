@@ -1,4 +1,8 @@
 .app__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* set a high z-index to ensure the navbar appears over other elements */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -8,7 +12,6 @@
     background: var(--color-crimson);
     backdrop-filter: blur(5rem);
 }
-
 .app__navbar-logo {
     display: flex;
     justify-content: flex-start;
@@ -50,7 +53,7 @@
     height: 100vh;
     background: var(--color-black);
     transition: .5s ease;
-
+    
     flex-direction: column;
     z-index: 5;
 }
@@ -111,3 +114,4 @@
         width: 110px;
     }
 }
+

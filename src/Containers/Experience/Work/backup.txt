@@ -33,7 +33,7 @@ const cardsData = [
     title: "Portfolio 3",
     imageSrc: IMG8,
     links: {
-      demo: "https://dyaaalyassin.netlify.app",
+      demo: "https://dyaaportfolio1.netlify.app/",
       github: ""
     }
   },
@@ -92,7 +92,7 @@ function Card({ title, imageSrc, links }) {
           </div>
           <div className="flip-card-back">
             <p className="title">Links</p>
-            <p>Leave Me</p>
+            <p>Click Me</p>
             <div className="comp">
               <div className="container__links">
                 <div className="container__eye">
@@ -100,7 +100,7 @@ function Card({ title, imageSrc, links }) {
                   <a href={links.demo} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
+                      whileHover={{ scale: [1, 0.9], color: "orange", transition: { duration: 0.25 } }}
                       transition={{ duration: 0.25 }}
                     >
                       <AiFillEye />
@@ -113,8 +113,9 @@ function Card({ title, imageSrc, links }) {
                   <a href={links.github} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
+                      whileHover={{ scale: [1, 0.9], color: "purple", transition: { duration: 0.25 } }}
                       transition={{ duration: 0.25 }}
+                      
                     >
                       <AiFillGithub />
                     </motion.div>
@@ -150,20 +151,8 @@ function Work() {
           ))}
         </div>
 
-        <a href="https://en.wikipedia.org/">Wikipedia</a>
-        <div class="box">
-            <iframe 
-                src="https://en.wikipedia.org/" width = "500px" height = "500px">
-            </iframe>
-        </div> 
-
-
-        <a href="https://www.jquery.com/">JQuery</a>
-          <div class="box">
-              <iframe 
-                  src="https://www.jquery.com/" width = "500px" height = "500px">
-              </iframe>
-          </div> 
+        
+  
 
       </>
       </div>
@@ -171,3 +160,138 @@ function Work() {
 }
 
 export default Work;
+*****************************************************************
+
+
+.container__work-title {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__work-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+
+}
+
+.card-container {
+  width: 200px; /* reduce the width of each card container */
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
+  
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%; /* set the width of each card to 100% */
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 3rem}
+
+.title {
+  font-size: small;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid var;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(
+    120deg,
+    red 60%,
+    rgb(255, 231, 222) 88% rgb(255, 211, 195) 40%,
+    rgba(227, 174, 154, 0.603) 48%
+  );
+  color: var(--color-golden);
+}
+
+.flip-card-back {
+  background: linear-gradient(
+    120deg,
+    #f6f6f5 30%,
+    white 88%,
+    40%,
+    var(--color-crimson) 78%
+  );
+  color: grey;
+  transform: rotateY(180deg);
+}
+
+.comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.container__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container__eye h1 {
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+.container__git h1 {
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+.img {
+  object-fit: contain;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

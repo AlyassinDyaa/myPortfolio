@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://example.com/send-email', formData);
+      await axios.post('dyaaalyassin99@gmail.com', formData);
       alert('Email sent successfully!');
     } catch (error) {
       console.error(error);
@@ -33,8 +33,10 @@ const Contact = () => {
 
   return (
     <div className="contact-page-container">
-      <h1 className="title">Contact Us</h1>
+
+      <h1 className="title" style={{fontSize: "3rem"}}>Contact Us</h1>
       <h2 className="sub-title">Get in touch with us</h2>
+
       <div className="contact-form-container">
         <div className="contact-form-left">
           <h3 className="contact-form-title">Contacting Form</h3>
@@ -52,6 +54,7 @@ const Contact = () => {
           <h3 className="contact-form-title">Contact Me</h3>
           <p><strong>Phone Number:</strong> +1 518 952 5899</p>
           <p><strong>Location:</strong> 12309, Niskayuna ,NY</p>
+          <p><strong>Email:</strong> dyaaalyassin@yahoo.com</p>
         </div>
       </div>
 

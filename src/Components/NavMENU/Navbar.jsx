@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import {BiInfinite} from "react-icons/bi"
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import './Navbar.css';
 
@@ -8,29 +9,29 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h1>D'Yaa</h1> 
+        <h2>D'Yaa</h2> 
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans"><a href="#home">Home</a></li>
-        <li className="p__opensans"><a href="#about">Work</a></li>
-        <li className="p__opensans"><a href="#work">Education</a></li>
-        <li className="p__opensans"><a href="#skills">Skills</a></li>
-        <li className="p__opensans"><a href="#skills">Hobbies</a></li>
-        <li className="p__opensans"><a href="#contact">Contact</a></li>
+        <li className="p__opensans"><a href="/">Home</a></li>
+        <li className="p__opensans"><a href="/work">Work</a></li>
+        <li className="p__opensans"><a href="/edu">Education</a></li>
+        <li className="p__opensans"><a href="/skills">Skills</a></li>
+        <li className="p__opensans"><a href="/hobbies">Hobbies</a></li>
+       
       </ul>
      
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color="#000" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
+            <BiInfinite fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
-              <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="#work" onClick={() => setToggleMenu(false)}>Work</a></li>
-              <li><a href="#eduction" onClick={() => setToggleMenu(false)}>Education</a></li>
-              <li><a href="#skills" onClick={() => setToggleMenu(false)}>Skills</a></li>
-              <li><a href="#hobbies" onClick={() => setToggleMenu(false)}>Hobbies</a></li>
-              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <li><a href="/" onClick={() => setToggleMenu(false)}>Home</a></li>
+              <li><a href="/work" onClick={() => setToggleMenu(false)}>Work</a></li>
+              <li><a href="/edu" onClick={() => setToggleMenu(false)}>Education</a></li>
+              <li><a href="/skills" onClick={() => setToggleMenu(false)}>Skills</a></li>
+              <li><a href="#/obbies" onClick={() => setToggleMenu(false)}>Hobbies</a></li>
+          
             </ul>
           </div>
         )}
