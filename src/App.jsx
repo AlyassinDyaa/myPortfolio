@@ -11,7 +11,7 @@ import EDUCATION from "./Containers/Education/e"
 import SKILLS from "./Containers/Skills/skills"
 import HOBBIES from "./Containers/HOBBIES/hobbies"
 import MAIN from "./Containers/MAIN/main"
-import SECTIONS from "./Containers/MAIN/Sections/sections"
+
 import COMICS from "./Containers/HOBBIES/Comics/comics"
 import FOOT from "./Containers/FOOT/foot"
 
@@ -21,7 +21,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<MAIN />} />
-          <Route path="/work" element={<WORK />} />
+          <Route path="/Work" element={<WORK />} />
           <Route path="/edu" element={<EDUCATION />} />
           <Route path="/skills" element={<SKILLS />} />
           <Route path="/hobbies" element={<HOBBIES />} />

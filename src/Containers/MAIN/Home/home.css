@@ -93,7 +93,16 @@
   }
 
   .imgD {
-  display: none;
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+    left: auto;
+    transform: none;
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -110,12 +119,15 @@
   }
 
   .imgD {
-    width: 40rem;
-    height: 20rem;
-    left: -10rem;
+    width: 50%;
+    height: auto;
+    left: -10%;
     top: 30%;
     transform: translateY(-30%);
     border-radius: 10rem 10rem 10rem 10rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -128,5 +140,7 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: 12rem 12rem 12rem 12rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }

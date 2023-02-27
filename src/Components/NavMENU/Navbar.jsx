@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="/">Home</a></li>
-        <li className="p__opensans"><a href="/work">Work</a></li>
+        <li className="p__opensans"><a href="/Work">Work</a></li>
         <li className="p__opensans"><a href="/edu">Education</a></li>
         <li className="p__opensans"><a href="/skills">Skills</a></li>
         <li className="p__opensans"><a href="/hobbies">Hobbies</a></li>
