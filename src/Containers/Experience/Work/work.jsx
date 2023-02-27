@@ -97,8 +97,8 @@ function Card({ title, imageSrc, links }) {
 
 
           <div className="flip-card-back">
-            <p className="title">Links</p>
-            <p>Click Me</p>
+            <p className="title">Click Me</p>
+            
             <div className="comp">
               <div className="container__links">
                 <div className="container__eye">
