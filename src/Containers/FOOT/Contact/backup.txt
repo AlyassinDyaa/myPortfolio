@@ -1,0 +1,367 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { motion } from "framer-motion"
+
+
+
+
+
+import './contact.css';
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    subject: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('dyaaalyassin99@gmail.com', formData);
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error(error);
+      alert('Failed to send email. Please try again later.');
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <div className="contact-page-container">
+
+      <h1 className="title" style={{fontSize: "3rem"}}>Contact Us</h1>
+      <h2 className="sub-title">Get in touch with us</h2>
+
+      <div className="contact-form-container">
+        <div className="contact-form-left">
+          <h3 className="contact-form-title">Contacting Form</h3>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleInputChange} required />
+            <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleInputChange} required />
+            <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleInputChange} required />
+            <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} required />
+            <textarea name="message" placeholder="Message" value={formData.message} onChange={handleInputChange} required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        
+        <div className="contact-form-right">
+          <h3 className="contact-form-title">Contact Me</h3>
+          <p><strong>Phone Number:</strong> +1 518 952 5899</p>
+          <p><strong>Location:</strong> 12309, Niskayuna ,NY</p>
+          <p><strong>Email:</strong> dyaaalyassin@yahoo.com</p>
+        </div>
+      </div>
+
+      <div class="footer-basic">
+    <footer>
+        <div class="social">
+            <div className="social-media-container">
+              <motion.a href="https://www.facebook.com/dyaa.alyassin/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
+                <FaFacebook className="social-media-icon-FACE" />
+              </motion.a>
+              <motion.a href="https://www.linkedin.com/in/d-yaa-a-1b56b9144/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
+                <FaLinkedin className="social-media-icon-LINK" />
+              </motion.a>
+              <motion.a href="https://github.com/AlyassinDyaa" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
+                <FaGithub className="social-media-icon-GIT" />
+              </motion.a>
+              <motion.a href="https://www.instagram.com/dyaa_alyassin/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
+                <FaInstagram className="social-media-icon-INSTA" />
+              </motion.a>
+        </div>
+        </div>
+        
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#work">Work</a></li>
+            <li class="list-inline-item"><a href="#education">Education</a></li>
+            <li class="list-inline-item"><a href="#skills">Skills</a></li>
+            <li class="list-inline-item"><a href="#hobbies">Hobbies</a></li>
+        </ul>
+        <p class="copyright">Delicate Solutions 2023 @D'Yaa Alyassin </p>
+    </footer>
+</div>
+
+
+    </div>
+
+
+    
+
+
+      
+
+
+  );
+};
+
+export default Contact;
+********************************************************
+
+.contact-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 5rem;
+    /*background-image: url("../../../Assets//blob2.svg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .contact-form-box {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 10%;
+  }
+  
+  .contact-form-left {
+    width: 60%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .contact-form-right {
+    width: 35%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .contact-form-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #006F8C;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-container {
+      flex-direction: column;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    .contact-form-left,
+    .contact-form-right {
+      width: fit-content;
+      
+    }
+  }
+  
+  .contact-form-container
+  {
+    background-color: var(--color-crimson);
+  }
+
+  
+
+  
+
+  .footer-basic {
+    padding:40px 0;
+    color:#4b4c4d;
+    padding-bottom: 8rem;
+    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+    padding-top: 0.5rem;
+  }
+  
+  .list-inline
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .list-inline-item:hover
+  {
+    color: var(--color-golden);
+  
+  }
+  
+  
+  /**************************************************/
+  .social-media-icon-LINK{
+    font-size: 2.4rem;
+    color: #333;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .social-media-icon-LINK:hover {
+    color:#0e76a8;
+    font-size: 3.2rem;
+  }
+  /**************************************************/
+  
+  
+  /**************************************************/
+  .social-media-icon-INSTA{
+    font-size: 2.4rem;
+    color: #333;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .social-media-icon-INSTA:hover {
+    color: pink;
+     font-size: 3.2rem;
+  }
+  /**************************************************/
+  
+  
+  
+  /**************************************************/
+  .social-media-icon-FACE{
+    font-size: 2.4rem;
+    color: #333;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .social-media-icon-FACE:hover {
+    color: #3b5998 ;
+    font-size: 3.2rem;
+  }
+  /**************************************************/
+  
+  
+  
+  /**************************************************/
+  .social-media-icon-GIT{
+    font-size: 2.4rem;
+    color: #333;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .social-media-icon-GIT:hover {
+    color: #171515;
+    font-size: 3.2rem;
+  }
+  /**************************************************/

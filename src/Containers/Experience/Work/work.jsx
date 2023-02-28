@@ -82,9 +82,9 @@ const cardsData = [
 
 function Card({ title, imageSrc, links }) {
   return (
-    <div className='card-container'>
+    <div className='card-container '>
 
-      <div className="flip-card">
+      <div className="flip-card ">
 
         <div className="flip-card-inner">
 
@@ -132,6 +132,9 @@ function Card({ title, imageSrc, links }) {
           </div>
         </div>
       </div>
+
+
+    
     </div>
   );
 }

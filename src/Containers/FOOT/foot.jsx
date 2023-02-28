@@ -7,7 +7,7 @@ const foot = () => {
       <>
       <div className='container__contact'>
         <C/>
-        <F/>
+      
       </div>
       </>
   )

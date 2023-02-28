@@ -1,8 +1,8 @@
 import React from 'react'
 import HEADER from "./head/head"
 import NAVMenu from "../../Components/NavMENU/Navbar"
+import LIST from "./listHobbies/listH"
 
-import WORK from "../Experience/exp"
 import Foot from "../FOOT/foot"
 import COMICS from "./Comics/comics"
 
@@ -13,6 +13,7 @@ const hobbies = () => {
     <div id='hobbies'>
       <NAVMenu/>
       <HEADER/>
+      <LIST/>
       <COMICS/>
       
       <Foot/>

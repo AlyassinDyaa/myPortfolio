@@ -1,0 +1,73 @@
+import React from 'react'
+import "./listH.css"
+import IMG0  from "../../../Assets/hobbiesList/swimming.jpg"
+import IMG1  from "../../../Assets/hobbiesList/tkd.jpg"
+import IMG2  from "../../../Assets/hobbiesList/comics.jpg"
+import IMG3  from "../../../Assets/hobbiesList/drawing.jpg"
+import IMG4  from "../../../Assets/hobbiesList/writing.jpg"
+
+
+
+const listH = () => {
+  return (
+  
+    <div className="listHobbies__container">
+
+        <a href="#comics" className="listHobbies__container-card">
+            <div className="listHobbies__container-card">
+                <img src={IMG2} alt="Comics" placeholder="img" className="listHobbies_img" />
+                <div className="listHobbies__container-card-text">
+                    <div className="listHobbies__container-card-header">Comics</div>
+                    <div className="listHobbies__container-card-subheader">The Adventures Beyond</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#swimming" className="listHobbies__container-card">
+            <div className="listHobbies__container-card">
+                <img src={IMG0} alt="swimming" placeholder="img" className="listHobbies_img" />
+                <div className="listHobbies__container-card-text">
+                    <div className="listHobbies__container-card-header">Swimming</div>
+                    <div className="listHobbies__container-card-subheader">I love to swim!</div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#tkd" className="listHobbies__container-card">
+            <div className="listHobbies__container-card">
+                <img src={IMG1} alt="taekwondo" placeholder="img" className="listHobbies_img" />
+                <div className="listHobbies__container-card-text">
+                    <div className="listHobbies__container-card-header">TaeKwonDo</div>
+                    <div className="listHobbies__container-card-subheader">Defense </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#drawing" className="listHobbies__container-card">
+            <div className="listHobbies__container-card">
+                <img src={IMG3} alt="drawing" placeholder="img" className="listHobbies_img" />
+                <div className="listHobbies__container-card-text">
+                    <div className="listHobbies__container-card-header">Drawing</div>
+                    <div className="listHobbies__container-card-subheader">Imagination is the limit</div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#writing" className="listHobbies__container-card">
+            <div className="listHobbies__container-card">
+                <img src={IMG4} alt="writing" placeholder="img" className="listHobbies_img" />
+                <div className="listHobbies__container-card-text">
+                    <div className="listHobbies__container-card-header">Writing</div>
+                    <div className="listHobbies__container-card-subheader">Creativity is endless</div>
+                </div>
+            </div>
+        </a>
+  </div>
+    
+  )
+}
+
+export default listH

@@ -1,0 +1,105 @@
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.hobbies
+{
+  /*  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+  background-color: #252525;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	min-height: 120vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__hobbiesList h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listHobbies__container
+{
+    margin: 5rem;
+    min-height: 90vh;
+    display: flex;
+}
+
+.listHobbies__container h1
+{
+    margin-right: 3rem;
+}
+ 
+.listHobbies__container-card
+{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2%;
+  
+}
+
+.listHobbies__container-card:hover
+{
+    flex: 3;
+}
+
+.listHobbies__container-card img
+{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+} 
+
+.listHobbies__container-card:hover img
+{
+    height: 80%;
+    width: 100%;
+    filter: none;
+} 
+
+
+.listHobbies__container-card-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .listHobbies__container-card:hover .listHobbies__container-card-text {
+    opacity: 1;
+  }
+  
+  .listHobbies__container-card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .listHobbies__container-card-subheader {
+    font-size: 1rem;
+  }
+
+  /************************************************/
+
+  
