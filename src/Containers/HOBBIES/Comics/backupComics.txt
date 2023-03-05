@@ -1,0 +1,9 @@
+ <div class="container__comics">
+
+  
+  <div class="card1">
+    <div class="border">
+      <h1>OREPHIC</h1>
+    </div>
+  </div>
+</div>
