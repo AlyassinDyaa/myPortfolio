@@ -11,6 +11,7 @@ import IMG5 from "../../../Assets/netclone.png";
 import IMG6 from "../../../Assets/fitness1.png";
 import IMG7 from "../../../Assets/unovaFit.png";
 import IMG8 from "../../../Assets/portfolio3.png";
+import IMG9 from "../../../Assets/3dportfolio1.png"
 
 const cardsData = [
   {
@@ -67,6 +68,14 @@ const cardsData = [
     links: {
       demo: "https://play.google.com/store/apps/details?id=com.unova_fit",
       github: "https://play.google.com/store/apps/details?id=com.unova_fit"
+    }
+  },
+  {
+    title: "3D Portfolio",
+    imageSrc: IMG9,
+    links: {
+      demo: "https://my3dportfolio1.netlify.app/",
+      github: "https://github.com/AlyassinDyaa/3dPortfolio1"
     }
   },
   {

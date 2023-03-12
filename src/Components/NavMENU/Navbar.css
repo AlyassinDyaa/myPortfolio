@@ -9,8 +9,9 @@
     align-items: center;
     padding: 1rem 2rem;
     object-fit: contain;
-    background: var(--color-crimson);
-    backdrop-filter: blur(5rem);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    
 }
 .app__navbar-logo {
     display: flex;

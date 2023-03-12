@@ -12,11 +12,7 @@ const hobbies = () => {
   return (
     <div id='hobbies'>
       <NAVMenu/>
-      <HEADER/>
-      <LIST/>
-      <COMICS/>
-      
-      <Foot/>
+    Coming Soon
     </div>
   )
 }

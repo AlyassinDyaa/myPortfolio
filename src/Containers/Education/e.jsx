@@ -6,9 +6,7 @@ const e = () => {
   return (
     <div id='education'>
       <NAV/>
-     
-      <EDU/>
-      <FOOT/>
+     COMING SOON
     </div>
   )
 }
