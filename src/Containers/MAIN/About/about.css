@@ -3,16 +3,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
+    place-items: center;
+    background-image: url('../../../Assets/Background/tex1.png'), radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: 'Share Tech', sans-serif;
+    color: white;
   }
   
   
   .image-container {
     width: 50%;
-    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   
   .image-container img {
@@ -33,7 +37,7 @@
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
   }
   
