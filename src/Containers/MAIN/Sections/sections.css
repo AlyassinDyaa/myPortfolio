@@ -21,7 +21,7 @@ body {
 
 .container__section
 {
-  
+    min-height: 110vh;
     background-repeat: no-repeat;
     background-size: cover; /* or 'contain' depending on your needs */
     margin-bottom: 5rem;
@@ -91,7 +91,7 @@ body {
   background-position: 0 0;
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
-   background-image: url("../../../Assets//blob1.svg");
+ /*  background-image: url("../../../Assets//blob1.svg");
     background-repeat: no-repeat;
     background-size: cover; /* or 'contain' depending on your needs */
 }

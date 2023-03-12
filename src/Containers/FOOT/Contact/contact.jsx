@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page-container">
+    <div className="contact-page-container" id='contact'>
 
       <h1 className="title" style={{fontSize: "3rem"}}>Contact Us</h1>
       <h2 className="sub-title">Get in touch with us</h2>

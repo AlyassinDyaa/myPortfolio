@@ -35,10 +35,11 @@
 .app__navbar-links li {
     margin: 0 1rem;
     cursor: pointer;
+    color: wheat;
 }
 
 .app__navbar-links li:hover {
-    color: var(--color-grey);
+    color: #7F00FF;
 }
 
 

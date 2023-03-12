@@ -3,16 +3,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("../../../Assets//blob1.svg");
-    background-repeat: no-repeat;
-    background-size: cover; /* or 'contain' depending on your needs */
-    
+    min-height: 90vh;
   }
   
   
   .image-container {
     width: 50%;
-    height: 100vh;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
