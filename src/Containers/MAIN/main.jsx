@@ -15,12 +15,14 @@ const main = () => {
         <NAVMENU/>
         <NAV/>
         <HOME/>
+      
         <ABOUT/>
-        <SECTION/>
+       <SECTION/>
         
+        {/*
         <div className='container__foot'>
           <FOOT/>
-        </div>
+  </div> */}
         
     </div>
   )

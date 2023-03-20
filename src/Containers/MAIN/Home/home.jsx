@@ -21,12 +21,12 @@ const home = () => {
         </motion.div>
 
         <motion.div 
-          className='imgD'
-          initial={{  y:1000 }}
+          className='container__image-box'
           animate={{ y: 0 }}
-          transition={{ duration: 1 }}
-      >
-          <img src= {ME} className='imgDyaa' placeholder='dyaa' alt='img'/>
+          transition={{ duration: 1 }}>
+           <div className='imgD'>
+             <img src= {ME} className='imgDyaa' placeholder='dyaa' alt='img'/>
+          </div> 
         </motion.div>
 
       </div>
