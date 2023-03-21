@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h2>DA</h2> 
+        <h2 style={{color: "wheat"}}>DA</h2> 
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="/">Home</a></li>
@@ -21,7 +21,7 @@ const Navbar = () => {
       </ul>
      
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="##5D3FD3" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color="wheat" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <BiInfinite fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />

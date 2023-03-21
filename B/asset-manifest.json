@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1896634c.css",
+    "main.js": "/static/js/main.f9685ed1.js",
+    "static/media/o2.png": "/static/media/o2.b4e14dd3ef958e3ba6ba.png",
+    "static/media/unisonB.png": "/static/media/unisonB.c3ae7f2912b503040338.png",
+    "static/media/Unison.png": "/static/media/Unison.3e9c1e9a505e16fd792e.png",
+    "static/media/drawing.jpg": "/static/media/drawing.934af81d24e9f3ef32fc.jpg",
+    "static/media/orephic.png": "/static/media/orephic.23012bafea914018d576.png",
+    "static/media/tkd.jpg": "/static/media/tkd.01252c6bf48c04177c25.jpg",
+    "static/media/comics.jpg": "/static/media/comics.34243dfd3662ae50f3a2.jpg",
+    "static/media/swimming.jpg": "/static/media/swimming.972add643f563ca3b5bb.jpg",
+    "static/media/netclone.png": "/static/media/netclone.a1da80ebe8445deb5993.png",
+    "static/media/running.jpg": "/static/media/running.024782e2c955faaa4e0e.jpg",
+    "static/media/workPic.jpg": "/static/media/workPic.6cdb10857eb4d8bc2e9c.jpg",
+    "static/media/fitness1.png": "/static/media/fitness1.a5189d7226f9cbb8bfa4.png",
+    "static/media/writing.jpg": "/static/media/writing.d9d8f0d5fd0db54d30a3.jpg",
+    "static/media/dyaa.png": "/static/media/dyaa.2feedad345b13590de30.png",
+    "static/media/just.jpg": "/static/media/just.13e1316a0e47dd64a75a.jpg",
+    "static/media/meta.png": "/static/media/meta.57e3530f2985711d98cf.png",
+    "static/media/rest.png": "/static/media/rest.83deb77ef79009d4d683.png",
+    "static/media/ab.jpg": "/static/media/ab.6d362dc8f0c6eaed86e2.jpg",
+    "static/media/3dportfolio1.png": "/static/media/3dportfolio1.394401d53c5069ad72ec.png",
+    "static/media/workBack.jpg": "/static/media/workBack.1933c68f51a2cc136c11.jpg",
+    "static/media/portfolio2.png": "/static/media/portfolio2.d14c092b1a39425050d9.png",
+    "static/media/portfolio1.png": "/static/media/portfolio1.e81579d735283dc7281e.png",
+    "static/media/portfolio3.png": "/static/media/portfolio3.1adc9eb4c35db34bda70.png",
+    "static/media/unovaFit.png": "/static/media/unovaFit.45764146ceb6bfc581cd.png",
+    "static/media/dyaaResume.pdf": "/static/media/dyaaResume.143714e6291f9a2a0adf.pdf",
+    "static/media/blob1.svg": "/static/media/blob1.1fa3b79608fb1424d848.svg",
+    "static/media/back.svg": "/static/media/back.77a5d47fc0b4c132fe89.svg",
+    "index.html": "/index.html",
+    "main.1896634c.css.map": "/static/css/main.1896634c.css.map",
+    "main.f9685ed1.js.map": "/static/js/main.f9685ed1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1896634c.css",
+    "static/js/main.f9685ed1.js"
+  ]
+}

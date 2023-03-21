@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
  
 const home = () => {
   return (
-    <div className='container__home gradient' id='work'>
+    <div className='container__home ' id='work'>
       <div className='home_build'>
         
         <motion.div 

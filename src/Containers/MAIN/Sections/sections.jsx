@@ -39,7 +39,7 @@ const Sections = () => {
             <div class="content">
               <h2 class="title">WORK</h2>
               <p class="copy">Here are some of my recent projects and experiences in the technology industry.</p>
-              <button class="btn" onClick={() => {setGoToWork(true);  scrollToTop();} }> Lets Go</button>
+              <button class="btn-head" onClick={() => {setGoToWork(true);  scrollToTop();} }> Lets Go</button>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ const Sections = () => {
             <div class="content">
               <h2 class="title">EDUCATION</h2>
               <p class="copy">Discover my academic background and qualifications.</p>
-              <button class="btn" onClick={() => {setGoToEDU(true);  scrollToTop();}}>Lets Go</button>
+              <button class="btn-head" onClick={() => {setGoToEDU(true);  scrollToTop();}}>Lets Go</button>
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const Sections = () => {
             <div class="content">
               <h2 class="title">SKILLS</h2>
               <p class="copy">Unveil my skillset in the skills section of my portfolio website.</p>
-              <button class="btn" onClick={() => {setGoToSkills(true);  scrollToTop();}}>Lets Go</button>
+              <button class="btn-head" onClick={() => {setGoToSkills(true);  scrollToTop();}}>Lets Go</button>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const Sections = () => {
             <div class="content">
               <h2 class="title">HOBBIES</h2>
               <p class="copy">Peek into my interests and hobbies in the hobbies section of my portfolio website..</p>
-              <button class="btn" onClick={() => {setGoToHobbies(true);  scrollToTop();}}>Lets Go</button>
+              <button class="btn-head" onClick={() => {setGoToHobbies(true);  scrollToTop();}}>Lets Go</button>
             </div>
           </div>
 
