@@ -16,12 +16,7 @@ html * {
     box-sizing: border-box;
   }
   
-  body {
-    font-size: 100%;
-    font-family: "Droid Serif", serif;
-    color: #7f8c97;
-    background-color: #e9f0f5;
-  }
+
   
  
   
@@ -239,6 +234,8 @@ html * {
     padding: 1em;
     color: white;
     border-radius: 10px;
+    border: 2px solid white;
+    
   }
   .cd-timeline-content::after {
     clear: both;
@@ -247,7 +244,11 @@ html * {
   }
   .cd-timeline-content h2 {
     color: white;
-    font-size: larger;
+  }
+
+  .cd-timeline-content h3 {
+    color: white;
+    padding-top: 15px;;
   }
   .cd-timeline-content p,
   .cd-timeline-content .cd-read-more,
