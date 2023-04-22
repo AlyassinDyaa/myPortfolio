@@ -19,10 +19,10 @@ const main = () => {
         <ABOUT/>
        <SECTION/>
         
-        {/*
+       
         <div className='container__foot'>
           <FOOT/>
-  </div> */}
+         </div> 
         
     </div>
   )

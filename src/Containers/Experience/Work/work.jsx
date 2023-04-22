@@ -115,7 +115,7 @@ function Card({ title, imageSrc, links }) {
                   <a href={links.demo} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9], color: "orange", transition: { duration: 0.25 } }}
+                      whileHover={{ scale: [1, 0.9], color: "violet", transition: { duration: 0.25 } }}
                       transition={{ duration: 0.25 }}
                     >
                       <AiFillEye />
@@ -128,7 +128,7 @@ function Card({ title, imageSrc, links }) {
                   <a href={links.github} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9], color: "purple", transition: { duration: 0.25 } }}
+                      whileHover={{ scale: [1, 0.9], color: "violet", transition: { duration: 0.25 } }}
                       transition={{ duration: 0.25 }}
                       
                     >
@@ -150,8 +150,8 @@ function Card({ title, imageSrc, links }) {
 
 function Work() {
   return (
-    <div id='work'>
-      <>
+    <div id='work' className='workClass'>
+      
       <div className='container__work' >
         <h1 className='container__work-title'> WORK </h1>
         <h2 className='container__work-sub'> See Demos belows</h2>
@@ -168,11 +168,6 @@ function Work() {
             />
           ))}
         </div>
-
-        
-  
-
-      </>
       </div>
   );
 }

@@ -4,12 +4,13 @@ import NAVMenu from "../../Components/NavMENU/Navbar"
 import HEADER from "./headerWork/headerwork"
 import WORK from "./Work/work"
 import Foot from "../FOOT/foot"
+import TIME from "./Timeline/time"
 
 const exp = () => {
   return (
     <div id='work'>
      <NAVMenu/>
-     <HEADER/>
+   <TIME/>
      <WORK/>
      <Foot/>
     </div>

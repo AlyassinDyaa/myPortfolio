@@ -14,7 +14,7 @@ const Sections = () => {
     const [goToHobbies, setGoToHobbies] = React.useState(false);
 
     if (goToWork) {
-      return <Navigate to="/work" />;
+      return <Navigate to="/Work" />;
     }
     if (goToEDU) {
       return <Navigate to="/edu" />;

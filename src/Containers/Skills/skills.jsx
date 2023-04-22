@@ -5,6 +5,7 @@ import NAVMenu from "../../Components/NavMENU/Navbar"
 const skills = () => {
   return (
     <div id='skills' >
+      <NAVMenu/>
       Coming Soon
   </div>
   )
